@@ -1,7 +1,7 @@
 class Solution:
     def canReorderDoubled(self, arr: List[int]) -> bool:
         cnt = Counter(arr)
-        for i in sorted(arr, key = lambda x: abs(x)):
+        for i in sorted(arr, key =abs):
             if cnt[i] == 0:
                 continue
             if cnt[i*2] == 0:
